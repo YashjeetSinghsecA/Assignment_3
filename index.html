@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formula 1 Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video autoplay loop class="bg-video">
+      <source
+        src="background_vedio/f1-2023-this-is-no-ordinary-sport-1080-ytshorts.savetube.me.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+    <div class="quiz-container">
+      <header>
+        <h1>Formula 1 Quiz</h1>
+      </header>
+      <div id="quiz" style="display: none">
+        <div id="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="options"></div>
+        </div>
+        <button id="next-button">Next Question</button>
+        <div id="results"></div>
+      </div>
+
+      <div id="auth-container">
+        <label for="auth-code">Enter access code to start the quiz:</label>
+        <input type="password" id="auth-code" />
+        <button id="auth-button">Start Quiz</button>
+      </div>
+      <div id="quiz" style="display: none">
+        <!-- Quiz content will be dynamically filled -->
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="options"></div>
+        </div>
+        <button id="next-button">Next Question</button>
+        <div id="results"></div>
+      </div>
+      <div id="score-container" style="display: none">
+        <h2>Your Final Score:</h2>
+        <div id="score"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
